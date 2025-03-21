@@ -6,7 +6,7 @@
 
 #define WIDTH 	800
 #define HEIGHT 	600
-#define TITLE 	"TITLE"
+#define TITRE 	"TITRE"
 
 /* Prototypes des  structures (si necessaire) */
 
@@ -36,11 +36,11 @@ int 	main(int argc, char *argv[])
 	}
 
 	/* Création des renderer et window */
-	SDL_Window 		*window   = NULL;
+	SDL_Window 	*window   = NULL;
 	SDL_Renderer 	*renderer = NULL;
 
 	/* Initialisation de la window */
-	window 	= SDL_CreateWindow("GAME OF LIFE ( M.A.Souaré )", 
+	window 	= SDL_CreateWindow(TITRE,
 								SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 
 								WIDTH, HEIGHT, 0);
 	
