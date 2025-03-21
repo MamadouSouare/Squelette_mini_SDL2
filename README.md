@@ -7,7 +7,7 @@ Il contient :
 ✅ Une fonction `Update_Game()` pour mettre à jour les données du jeu.  
 ✅ Une fonction `Draw_Game(SDL_Renderer *renderer)` pour afficher à l'écran.  
 ✅ Une fonction `sdl_print_error(char *msg)` pour afficher les erreurs dans la console.
-✅ Une fonction `Destroy_Window(SDL_Renderer *renderer, SDL_Window *window)` pour libérer le renderer et la window et quitte la SDL.
+✅ Une fonction `Destroy_Window(SDL_Window *window, SDL_Renderer *renderer)` pour libérer le renderer et la window et quitte la SDL.
 
 Un **Makefile** est également inclus pour compiler sous **Windows**, avec les flags nécessaires pour SDL2.  
 
