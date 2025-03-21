@@ -8,12 +8,10 @@
 #define HEIGHT 	600
 #define TITRE 	"TITRE"
 
-/* Prototypes des  structures (si necessaire) */
-
 
 /* Prototypes des fonctions */
 void 	sdl_print_error(char *msg);
-void 	Destroy_Alls(SDL_Window *window, SDL_Renderer *renderer);
+void 	Destroy_Window(SDL_Window *window, SDL_Renderer *renderer);
 
 
 /* Prototypes des Fonctions qui seront appellées dans le main */
@@ -59,6 +57,7 @@ int 	main(int argc, char *argv[])
 	{
 		sdl_print_error("Initialisation du renderer");
 		SDL_DestroyWindow(window);
+		SDL_Quit();
 	}
 
 	/* ************************************************** */
@@ -95,7 +94,7 @@ int 	main(int argc, char *argv[])
 
 		SDL_Delay(delay);
 	}
-
+	Destroy_Window(window, renderer);
 	return (EXIT_SUCCESS);
 }
 
@@ -105,7 +104,7 @@ void 	sdl_print_error(char *msg){
 }
 
 /* Cette fonction detruit et libère les window et renderer */
-void 	Destroy_Alls(SDL_Window *window, SDL_Renderer *renderer){
+void 	Destroy_Window(SDL_Window *window, SDL_Renderer *renderer){
 	if (renderer)
 		SDL_DestroyRenderer(renderer);
 	
