@@ -1,5 +1,5 @@
 
-CC 	 	= gcc
+CC 	= gcc
 SRC 	= main.c 
 DEST 	= bin\prog
 ERROR_FLAGS = -Wall -Wextra 
